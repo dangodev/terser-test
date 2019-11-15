@@ -1,0 +1,12 @@
+{
+  "name": "terser-test",
+  "scripts": {
+    "build": "npm run build:terser & npm run build:rollup",
+    "build:terser": "npx terser loader.mjs -o loader.terser.mjs -m",
+    "build:rollup": "rollup -c rollup.config.js"
+  },
+  "dependencies": {
+    "rollup": "^1.27.0",
+    "rollup-plugin-terser": "^5.1.2"
+  }
+}
